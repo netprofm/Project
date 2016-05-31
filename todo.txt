@@ -1,0 +1,10 @@
+To do list:
+
+Kijken welke lijnen er worden genoemd in de dataset en die een eenvoudige naam geven. Daarbij rekening houden met:
+	1. "Rotterdam C - Uitgeest" = "Uitgeest - Rotterdam C"
+	2. "Hilversum - Amsterdam C/Almere C/Schiphol Airport" = "Hilversum - Amsterdam C" & "Hilversum - Almere C" & "Hilversum - Schiphol Airport"
+
+Aantal treinen per traject opzoeken zodat de punctualiteit "benaderd" kan worden --> Drukke lijnen zullen meer invloed hebben op de punctualiteit
+
+SVG file organiseren 
+Excel file bijbeitelen
