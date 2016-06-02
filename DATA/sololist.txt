@@ -1,0 +1,77 @@
+Woerden
+Tilburg
+Kampen
+Eindhoven
+Dordrecht
+Hamm (Westf.)
+Amsterdam Centraal
+Alkmaar
+Enkhuizen
+Tiel
+Zutphen
+Maastricht
+Den Haag Centraal
+Leiden Centraal
+Utrecht Centraal
+Zandvoort aan Zee
+Schiphol Airport
+Groningen
+Amersfoort
+Roodeschool
+Leer (Ostfriesland)
+Venlo
+Lelystad Centrum
+Berlin Ostbahnhof
+Hoek van Holland Strand
+Winterswijk
+Enschede
+Frankfurt (M) Hbf
+Kerkrade Centrum
+Stolberg Altstadt
+Munster (Westf.) Hbf
+Den Helder
+Delfzijl
+Rotterdam Centraal
+Utrecht Maliebaan
+Hilversum
+Deventer
+Brussel-Zuid/Midi
+Hoorn
+Marienberg
+Bad Nieuweschans
+Veendam
+Oldenzaal
+Vlissingen
+'s-Hertogenbosch
+Haarlem
+Almere Oostvaarders
+Paris-Nord
+Breda
+Gronau (Westf.)
+Maastricht Randwyck
+Leeuwarden
+Rhenen
+Zaandam
+Geldermalsen
+Sittard
+Harlingen Haven
+Apeldoorn
+Stavoren
+Nijmegen
+Almelo
+Baarn
+Ede-Wageningen
+Arnhem
+Roosendaal
+Dortmund Hbf
+Liege-Guillemins
+Hengelo
+Emmen
+Gouda
+Roermond
+Zwolle
+Den Haag HS
+Antwerpen-Centraal
+Uitgeest
+Alphen a/d Rijn
+Heerlen

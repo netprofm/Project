@@ -1,0 +1,103 @@
+'s-Hertogenbosch - Tilburg
+Dortmund Hbf - Enschede
+Groningen - Veendam
+Arnhem - Frankfurt (M) Hbf
+Dordrecht - Geldermalsen
+Apeldoorn - Zutphen
+Alkmaar - Den Helder
+Maastricht - Sittard
+Nijmegen - Venlo
+Arnhem - Winterswijk
+Hamm (Westf.) - Venlo
+Berlin Ostbahnhof - Hengelo
+Groningen - Bad Nieuweschans
+Breda - Rotterdam Centraal
+Harlingen Haven - Leeuwarden
+Hoek van Holland Strand - Rotterdam Centraal
+Deventer - Zwolle
+Arnhem - Tiel
+Roermond - Sittard
+Haarlem - Zandvoort aan Zee
+Leiden Centraal - Schiphol Airport
+Groningen - Leeuwarden
+Baarn - Utrecht Centraal
+Amsterdam Centraal - Woerden
+Groningen - Roodeschool
+Alkmaar - Hoorn
+Schiphol Airport - Zaandam
+Lelystad Centrum - Schiphol Airport
+Den Haag Centraal - Den Haag HS
+Heerlen - Sittard
+Leeuwarden - Stavoren
+'s-Hertogenbosch - Nijmegen
+Arnhem - Zutphen
+Hilversum - Utrecht Centraal
+Haarlem - Uitgeest
+Almelo - Hengelo
+Paris-Nord - Rotterdam Centraal
+Schiphol Airport - Utrecht Centraal
+Enschede - Hengelo
+Den Haag Centraal - Leiden Centraal
+Amsterdam Centraal - Schiphol Airport
+Eindhoven - Venlo
+Enkhuizen - Hoorn
+Arnhem - Nijmegen
+Breda - Dordrecht
+'s-Hertogenbosch - Utrecht Centraal
+Amersfoort - Utrecht Centraal
+Rotterdam Centraal - Utrecht Centraal
+Heerlen - Kerkrade Centrum
+Almere Oostvaarders - Utrecht Centraal
+Rhenen - Utrecht Centraal
+Amsterdam Centraal - Lelystad Centrum
+Amersfoort - Apeldoorn
+Maastricht - Maastricht Randwyck
+Hengelo - Oldenzaal
+Breda - Roosendaal
+Emmen - Zwolle
+Alkmaar - Amsterdam Centraal
+Amsterdam Centraal - Hoorn
+Brussel-Zuid/Midi - Rotterdam Centraal
+Amersfoort - Amsterdam Centraal
+Amersfoort - Schiphol Airport
+Apeldoorn - Deventer
+Leeuwarden - Zwolle
+Roosendaal - Vlissingen
+Tiel - Utrecht Centraal
+'s-Hertogenbosch - Eindhoven
+Leiden Centraal - Utrecht Centraal
+Arnhem - Utrecht Centraal
+Liege-Guillemins - Maastricht
+Eindhoven - Roermond
+Winterswijk - Zutphen
+Utrecht Centraal - Utrecht Maliebaan
+Den Haag HS - Rotterdam Centraal
+Groningen - Zwolle
+Enschede - Gronau (Westf.)
+Kampen - Zwolle
+Delfzijl - Groningen
+Almelo - Marienberg
+Den Haag Centraal - Utrecht Centraal
+Roermond - Venlo
+Hengelo - Zutphen
+Eindhoven - Tilburg
+Alphen a/d Rijn - Gouda
+Deventer - Zutphen
+Heerlen - Maastricht
+Groningen - Leer (Ostfriesland)
+Heerlen - Stolberg Altstadt
+Amersfoort - Ede-Wageningen
+Rotterdam Centraal - Schiphol Airport
+Almelo - Deventer
+Enschede - Munster (Westf.) Hbf
+Dordrecht - Roosendaal
+Haarlem - Leiden Centraal
+Amsterdam Centraal - Utrecht Centraal
+Almelo - Zwolle
+Den Haag HS - Leiden Centraal
+Breda - Tilburg
+Dordrecht - Rotterdam Centraal
+Amersfoort - Zwolle
+Antwerpen-Centraal - Roosendaal
+Lelystad Centrum - Zwolle
+Amsterdam Centraal - Haarlem
