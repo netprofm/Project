@@ -1,53 +1,48 @@
-
+#!/usr/bin/env python
 # Name: Chris Olberts
 # Student number: 6240305
-# SCRAPING.PY
-'''
-This script scrapes IMDB and outputs a CSV file with highest ranking tv series.
-'''
-# IF YOU WANT TO TEST YOUR ATTEMPT, RUN THE test-tvscraper.py SCRIPT.
+# SCRAPER.PY
+
 import csv
 
+from datetime import timedelta, date
 from pattern.web import URL, DOM
 
-TARGET_URL = "https://vertraa.gd/all/daggrafiek/20072012"
 OUTPUT_CSV = 'percentages.csv'
 
-percentage_list = []
+def daterange(start_date, end_date):
+    for n in range(int ((end_date - start_date).days)):
+        yield start_date + timedelta(n)
 
-def extract_percentages(dom):
-    
-    file_url = URL(TARGET_URL)
-    file_dom = DOM(file_url.download())
-      
-    # retrieve rankings...        
-    for rank in file_dom.by_tag("h1.percentage"):
-        # ... and store them in a list
-        ranking_list.append(rank.content[:-1])
-    
-def save_csv(f, percentages):
-    '''
-    Output a CSV file containing highest ranking TV-series.
-    '''
-    writer = csv.writer(f)
-    writer.writerow(['Percentage'])
-    
-if __name__ == '__main__':
+start_date = date(2012, 7, 20)
+end_date = date(2016, 5, 31)
+total_list = []
+
+for single_date in daterange(start_date, end_date):
+    TARGET_URL = "https://vertraa.gd/all/daggrafiek/" + single_date.strftime("%d%m%Y")
+    def extract_percentages(dom):
+        file_url = URL(TARGET_URL)
+        file_dom = DOM(file_url.download())
+
+        percentage_list = []
+        if file_dom.by_class('percentage'):
+            for item in file_dom.by_class('percentage'):
+                percentage_list.append(item.content.encode('utf-8'))
+            return percentage_list[0]
+        else:
+            return "nodata"
+
     # Download the HTML file
     url = URL(TARGET_URL)
     html = url.download()
 
-    # Save a copy to disk in the current directory, this serves as an backup
-    # of the original HTML, will be used in testing / grading.
-    with open(BACKUP_HTML, 'wb') as f:
-        f.write(html)
-
     # Parse the HTML file into a DOM representation
     dom = DOM(html)
-    
-    # Extract the tv series (using the function you implemented)
-    percentages = extract_percentages(dom)
 
-    # Write the CSV file to disk (including a header)
-    with open(OUTPUT_CSV, 'wb') as output_file:
-        save_csv(output_file, percentages)
+    # Extract the percentage (using the function you implemented)
+    percentages = extract_percentages(dom)
+    print single_date.strftime("%d-%m-%Y") + " " + percentages
+    total_list.append(single_date.strftime("%d-%m-%Y") + " " + percentages)
+
+for item in total_list:
+    OUTPUT_CSV.write("%s\n" % item)
