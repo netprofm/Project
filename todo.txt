@@ -8,3 +8,12 @@ Aantal treinen per traject opzoeken zodat de punctualiteit "benaderd" kan worden
 
 SVG file organiseren 
 Excel file bijbeitelen
+
+
+
+
+
+Geen weer--> storingskaart enkel
+klik op traject, krijg traject info
+klik op verstoring, krijg kaart met alle verstoringen
+ipv verstoringen per dag een barchart met verstoringen per aangeklikt traject
