@@ -17,3 +17,11 @@ Geen weer--> storingskaart enkel
 klik op traject, krijg traject info
 klik op verstoring, krijg kaart met alle verstoringen
 ipv verstoringen per dag een barchart met verstoringen per aangeklikt traject
+
+
+
+maak een lijst met lijn "id's" --> 	Den Helder - Alkmaar = lijn001
+					Zaandam - Hoorn = lijn002
+					Amsterdam Centraal - Sloterdijk = lijn003
+					Sloterdijk - Zaandam = lijn004					
+					Amsterdam Centraal - Hoorn = lijn002 + lijn003 + lijn004
