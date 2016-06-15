@@ -1,5 +1,5 @@
 import csv
-with open('sololist.csv', 'rb') as f:
+with open('Book1.csv', 'rb') as f:
     reader = csv.reader(f)
     lijstje = map(tuple, reader)
 

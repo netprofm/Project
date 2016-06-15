@@ -1,0 +1,15 @@
+Selecteerbaar:
+	Drop down voor storingsselectie: Selecteer 1 of alle storingen (misschien is vinkjes een beter idee? (wordt moeilijk met highlighten)). Hiermee worden meerdere dingen aangepast: de kaart zal trajecten met meer van dat type (of alle types) storingen dikker highlighten dan trajecten met minder storingen. 
+	
+	Datumselector om een daterange aan te geven tussen welke datums de storingen moeten worden weergegeven. Door hier mee te spelen kan de gebruiker zelf aanpassen of het winter of zomer is of iets dergelijks zonder dat ik daar enige beperking voor opleg, of een traumatische dag in zijn reisgeschiedenis opzoeken. 
+	
+	Weergave van geselecteerde trajecten: De trajecten zijn klikbaar op de kaart. Als een stukje wordt aangeklikt is het niet zo dat altijd Amsterdam - Utrecht wordt geselecteerd maar natuurlijk meerdere trajecten. Dit staat hier weergegeven. Ook is er een drop down menu om 1 traject tegelijk te bekijken mocht je dat willen. Dit in combinatie met de datums en de storingstypes geeft misschien wel een heel gedetailleerde indruk van wat er per lijn gebeurt. 
+	
+	
+Grafieken
+	Er komt een grafiek waar telkens op de x as de types storingen in staan en op de y as het aantal storingen. Dit wordt aangepast als er iets anders geselecteerd wordt: Als alles geselecteerd is (dat is, alle trajecten en alle storingen), dan zal de barchart alle storingen over alle jaren weergeven zodat je kan zien welke storing het meeste voorkomt. Als je dan een traject aanklikt krijg je de info over dat traject te zien. Als je maar 1 storing selecteert is de grafiek natuurlijk niet zo interessant. Het lijkt me beter om 'm dan leeg te maken en een andere grafiek weer te laten geven wanneer die storingen op dat traject waren. Ook zou het vet zijn dat de bars klikbaar zijn zodat je 1 storing selecteert en dan ook op de kaart dus meteen ziet waar die storing veel en weinig voorkomt. Moet je wel bedenken dat op sommige trajecten meer treinen/meer wissels etc zijn maar dat is misschien wel niet zo relevant. Een tweede dingetje in de grafiek zouden de gemiddeldes van de hele dataset kunnen zijn.
+	
+	Grafiek 2 wordt een lijngrafiek waarin, als er enkel 1 storingstype geselecteerd is en 1 traject, een tijdsverloop van het aantal storingen per maand/dag over alle geselecteerde tijd komt te staan*. Misschien zijn er wel mooie patronen te zien!
+	Als er meerdere storingen geselecteerd zijn dan komen alle storingen voor dat traject op de y as te staan. Als dan ook nog alle/meerdere trajecten geselecteerd zijn dan wordt gewoon alles op die y as weergeven. Misschien wordt dit wel onduidelijk maar dat is voor later. 
+	
+	*Ook een mooie lijngrafiek lijkt me om de punctualiteit in beeld te brengen. Misschien leuk om bij grafiek twee weer te geven met een derde as aan de rechterkant!
