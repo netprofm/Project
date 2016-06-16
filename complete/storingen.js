@@ -28,8 +28,7 @@ $(function() {
 d3.select("body")
 	.append("div")
 		.attr("id", "dropdown")
-	.append("select")
-		.attr("id", "drop1");
+
 		
 function dagenVerschil() {
 		eenDag = 24*60*60*1000; // hours*minutes*seconds*milliseconds
@@ -45,7 +44,8 @@ function dataLoad(lijnendata) {
 	};
 	trajectUpdate(lijnendata[0].traject);
 	dagenVerschil();
-	storingenGemiddeldTotaal = storingenGemiddeld
+	barchartUpdate();
+
 };
 
 d3.csv("storingen.csv", function(CSVdata) {
@@ -58,6 +58,37 @@ d3.json("conversion.json", function(JSONdata) {
 	dataLoad(lijnendata);
 });
 
+d3.csv("vertraagd.csv", function(CSVdata) {
+	vertragingsdata = CSVdata;
+	drawDelayGraph(vertragingsdata);
+});
+
+function drawDelayGraph(vertragingsdata) {
+	
+	// initialize margins
+	var margin = {top: 20, right: 60, bottom: 80, left: 60},
+		padding = {top: 5, right: 1, bottom: 0, left: 1},
+		fullWidth = 1500,
+		fullHeight = 600,
+		width = fullWidth - margin.left - margin.right,
+		height = fullHeight - margin.top - margin.bottom;
+
+	// set the scales
+	var x = d3.time.scale()
+		.range([0, width]);
+
+	var y = d3.scale.linear()
+		.range([height, 0])
+		
+	// make the entire chart element
+	var delayChart = d3.select("#linechart")
+						.append("svg")
+							.attr("class", "delayChart")
+							.attr("width", fullWidth)
+							.attr("height", fullHeight);
+	
+	/////////////////////// hier verder chris
+}
 
 
 currentLijnen = [];
@@ -127,22 +158,56 @@ function storingenUpdate(traject) {
 	storingenTraject = storingenTraject / aantalDagen;
 	storingenTotaal = (eindIndex - startIndex) / aantalDagen;
 	storingenGemiddeld = (storingenTotaal / lijnendata.length);
-	console.log(storingenTraject);
-	console.log(storingenGemiddeld);
-	console.log(storingenGemiddeldTotaal);
+	
+	barchartUpdate()
 };
 
-var barchartwidth = 640,
-	barchartHeight = 20;
+var barchartWidth = 640,
+	barHeight = 20;
 
 function barchartUpdate() {
+	data = []
+	if (storingenGemiddeldTotaal == "") {
+		console.log("henk")
+		storingenGemiddeldTotaal = storingenGemiddeld;
+	}
+	data.push(storingenTraject , storingenGemiddeld , storingenGemiddeldTotaal)
+	console.log(data)
 	d3.select(".barchartArea").remove();
 	d3.select("#barchart")
-		.append("g")
-			.attr("class", "chartArea")
-	
+		.attr("width", barchartWidth)
+		.append("svg")
+			.attr("class", "barchartArea")
 		
-}
+	var x = d3.scale.linear()
+		.domain([0, 0.4])
+		.range([0, barchartWidth]);
+
+	var chart = d3.select(".barchartArea")
+		.attr("width", barchartWidth)
+		.attr("height", barHeight * (data.length + 1));
+
+	var bar = chart.selectAll("g")
+		.data(data)
+	  .enter().append("g")
+		.attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
+	
+	bar.append("rect")
+		.attr("width", x)
+		.attr("height", barHeight - 1);
+
+	bar.append("text")
+				.attr("x", function(d) { return x(d) - 3; })
+				.attr("y", barHeight / 2)
+				.attr("dy", ".35em")
+				.text(function(d, i) { if ( i == 0 ) { return "Total: " + d } 
+									   if ( i == 1) { return "Henk: " + d }
+									   if ( i == 2) { return "Bonk: " + d }
+				});
+				
+	};
+	
+
 
 
 
